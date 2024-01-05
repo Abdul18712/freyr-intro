@@ -1,6 +1,9 @@
 body {       
     background-color: silver;
     font-family: 'Foldit', sans-serif;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 section {
@@ -52,6 +55,8 @@ button {
     border: black;
     cursor: pointer;
     border-radius: 5px;
+    color: #333;
+    font-weight: bold;
 }
 
 #messages li {
@@ -89,4 +94,8 @@ footer {
     h2 {
         font-size: 15px;
     }
+}
+
+.inputContainers {
+    margin: 10px;
 }
