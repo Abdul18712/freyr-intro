@@ -5,6 +5,8 @@
     <title>
         About Me
     </title>
+
+    <link rel="stylesheet" href="css\index.css">
 </head>
 
 <body>
@@ -54,12 +56,21 @@
         <h2>"Leave a Message"</h2>
 
         <form name= "leave_message">
-            <label for="usersName">Username:</label>
-            <input type="text" name="usersName" id="usersName" required=true>
-            <label for="usersEmail">Email:</label>
-            <input type="email" name="usersEmail" id="usersEmail" required=true>
-            <label for="usersMessage">Message:</label>
-            <textarea name="usersMessage" required=true></textarea>
+            <div class="inputContainers">
+                 <label for="usersName">Username:</label>
+                <input type="text" name="usersName" id="usersName" required=true>
+            </div>
+           
+            <div class="inputContainers">
+                <label for="usersEmail">Email:</label>
+                <input type="email" name="usersEmail" id="usersEmail" required=true>
+            </div>
+
+            <div class="inputContainers">
+                <label for="usersMessage">Message:</label>
+                <textarea name="usersMessage" required=true></textarea>
+            </div>
+            
             <Button type="submit">Submit</Button>
         </form>
     </section>
