@@ -34,7 +34,9 @@ li {
 }
 
 form {
-    margin-top: 20;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 label {
@@ -52,7 +54,7 @@ button {
     padding: 10px;
     background-color: #0f9924; 
     color: dimgrey;
-    border: black;
+    border: 1px solid black;
     cursor: pointer;
     border-radius: 5px;
     color: #333;
@@ -94,8 +96,62 @@ footer {
     h2 {
         font-size: 15px;
     }
+
+    #experience li {
+        flex: 0 0 calc(100% - 10px);
+    }
 }
 
 .inputContainers {
     margin: 10px;
+    flex: 1 1 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: gray; 
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+#experience ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#experience li {
+    flex: 0 0 50%;
+    margin-bottom: 15px;
 }
