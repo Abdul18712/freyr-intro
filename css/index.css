@@ -97,9 +97,6 @@ footer {
         font-size: 15px;
     }
 
-    #experience li {
-        flex: 0 0 calc(100% - 10px);
-    }
 }
 
 .inputContainers {
