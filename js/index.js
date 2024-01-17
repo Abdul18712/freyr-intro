@@ -52,7 +52,7 @@ githubRequest.addEventListener('load', function () {
   var repositories = JSON.parse(this.response);
   var projectSection = document.querySelector("#projects");
   var projectList = projectSection.querySelector("ul");
-  for (var i = 0; i < repositories.length; i++) {
+  for (let i = 0; i < repositories.length; i++) {
     var project = document.createElement("li");
     var link = document.createElement("a");
     link.innerText = repositories[i].name; 
