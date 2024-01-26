@@ -48,17 +48,17 @@ messageForm.addEventListener('submit', function (event) {
 fetch("https://api.github.com/users/Abdul18712/repos")
   .then(response => response.json())
   .then(repositories => {
-    var projectSection = document.querySelector("#projects");
-    var projectList = projectSection.querySelector("ul");
+    const projectSection = document.querySelector("#projects");
+    const projectList = projectSection.querySelector("ul");
     for (let i = 0; i < repositories.length; i++) {
-      var project = document.createElement("li");
-      var link = document.createElement("a");
+      const project = document.createElement("li");
+      const link = document.createElement("a");
       link.innerText = repositories[i].name;
       link.href = repositories[i].html_url;
       link.target = "_blank";
       project.appendChild(link);
       projectList.appendChild(project);
-      var description = document.createElement("p");
+      const description = document.createElement("p");
       description.innerText = repositories[i].description;
       project.appendChild(description);
     }
