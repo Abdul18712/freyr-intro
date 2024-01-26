@@ -1,5 +1,5 @@
 body {       
-    background-color: silver;
+    background-color: white;
     font-family: 'Foldit', sans-serif;
     max-width: 1000px;
     width: 100%;
@@ -10,16 +10,21 @@ section {
     margin-bottom: 15px;
 }
 
+img {
+    max-width: 150px;
+    height: 150px;
+    }
+
 h1 {
     font-size: 25px;
     font-weight: bold;
-    color: slategray;
+    color: #322FF7;
 }
 
 h2 {
     font-size: 20px;
     font-weight: bold;
-    color: slategray;
+    color: #413FD1;
 }
 
 ul {
@@ -29,6 +34,7 @@ ul {
 
 li {
     background-color: gray;
+    border-radius: 30px;
     padding: 10px;
     margin-bottom: 5px;
 }
@@ -54,9 +60,8 @@ button {
     padding: 10px;
     background-color: #0f9924; 
     color: dimgrey;
-    border: 1px solid black;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
     color: #333;
     font-weight: bold;
 }
@@ -138,7 +143,7 @@ nav a {
 
 #experience {
     display: inline-block;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 5px;
 }
 
